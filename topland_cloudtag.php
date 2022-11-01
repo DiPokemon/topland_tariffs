@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  **************/
 define( 'TOPLAND_CLOUDTAG_PLUGIN_DB_VERSION', '1.1' );
 define( 'TOPLAND_CLOUDTAG_PLUGIN_NAME',       'topland_cloudtag' );
-define( 'TOPLAND_CLOUDTAG_PLUGIN_NAME_RU',    'Отзывы' );
+define( 'TOPLAND_CLOUDTAG_PLUGIN_NAME_RU',    'Облако тегов' );
 define( 'TOPLAND_CLOUDTAG_DB_TABLE_NAME',     $wpdb->prefix . TOPLAND_CLOUDTAG_PLUGIN_NAME );
 define( 'TOPLAND_CLOUDTAG_PLUGIN_DIR',        plugin_dir_path( __FILE__ ) );
 define( 'TOPLAND_CLOUDTAG_PLUGIN_ADMIN_URL',  admin_url('?page=' . TOPLAND_CLOUDTAG_PLUGIN_NAME) );
