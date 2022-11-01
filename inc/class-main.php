@@ -143,7 +143,7 @@ function routing_handlers(){
 				break;
 			case 'edit':
 				self::$model->text   = $text;
-				self::$model->link = $ink;
+				self::$model->link = $link;
 				self::$model->save();
 				print('<script>window.location = "/wp-admin/?page=' . TOPLAND_CLOUDTAG_PLUGIN_NAME . '"</script>');
 				break;
