@@ -48,7 +48,7 @@ function activate(){
 
 	if ($wpdb->get_var("SHOW TABLES LIKE '" . TOPLAND_CLOUDTAG_DB_TABLE_NAME . "'") != TOPLAND_CLOUDTAG_DB_TABLE_NAME)
 	{
-		$sql = "CREATE TABLE " . TOPLAND_REVIEWS_DB_TABLE_NAME . " (
+		$sql = "CREATE TABLE " . TOPLAND_CLOUDTAG_DB_TABLE_NAME . " (
 			id int(11) NOT NULL AUTO_INCREMENT,
 			text tinytext NULL,
 			link tinytext NULL,
