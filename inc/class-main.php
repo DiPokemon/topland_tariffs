@@ -33,7 +33,7 @@ public function __construct( $file ){
 	}
 
 	// Shortcodes
-    add_shortcode('topland_tarifss', array(__CLASS__, 'replace_shortcode') );
+    add_shortcode('topland_tariffs', array(__CLASS__, 'replace_shortcode') );
 }
 
 
