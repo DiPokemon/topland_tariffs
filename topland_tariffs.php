@@ -37,5 +37,5 @@ register_activation_hook(__FILE__, array($topland_main_class, 'activate'));
 
 add_action( 'wp_enqueue_scripts', 'topland_tariffs_script' );
 function topland_tariffs_script(){
-	wp_enqueue_script( 'tariffs-slider-init', '/wp-content/plugins/topland-tariffs/static/js/tariffs-init.js', array('jquery','slick'), null, true);
+	wp_enqueue_script( 'tariffs-slider-init', '/wp-content/plugins/topland_tariffs/static/js/tariffs-init.js', array('jquery','slick'), null, true);
 }
