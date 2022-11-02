@@ -14,7 +14,7 @@ if ( ! defined( 'ABSPATH' ) ) exit;
  **************/
 define( 'TOPLAND_TARIFFS_PLUGIN_DB_VERSION', '1.1' );
 define( 'TOPLAND_TARIFFS_PLUGIN_NAME',       'topland_tariffs' );
-define( 'TOPLAND_TARIFFS_PLUGIN_NAME_RU',    'Облако тегов' );
+define( 'TOPLAND_TARIFFS_PLUGIN_NAME_RU',    'Тарифы' );
 define( 'TOPLAND_TARIFFS_DB_TABLE_NAME',     $wpdb->prefix . TOPLAND_TARIFFS_PLUGIN_NAME );
 define( 'TOPLAND_TARIFFS_PLUGIN_DIR',        plugin_dir_path( __FILE__ ) );
 define( 'TOPLAND_TARIFFS_PLUGIN_ADMIN_URL',  admin_url('?page=' . TOPLAND_TARIFFS_PLUGIN_NAME) );
