@@ -11,10 +11,4 @@
                 </div>
               </div>
             </section>       
-            <style>
-                .cloud_tag_link {
-                    border: 1px solid var(--main-white-color);
-                    border-radius: 5px;
-                    text-align: center;
-                }
-            </style>
+<style>.cloud_tag_link {border: 1px solid var(--main-white-color);border-radius: 5px;text-align: center;padding: 10px 0}.cloud_tag-slide {margin: 0 5px}</style>
