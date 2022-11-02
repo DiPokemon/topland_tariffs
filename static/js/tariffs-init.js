@@ -1,16 +1,16 @@
-function equalHeight(group) {
-    var tallest = 0;
-    group.each(function() {
-        thisHeight = $(this).height();
-        if(thisHeight > tallest) {
-            tallest = thisHeight;
-        }
-    });
-    group.height(tallest);
-}
-$(document).ready(function(){
-    equalHeight($(".offer_block-tariff"));
-}); 
+// function equalHeight(group) {
+//     var tallest = 0;
+//     group.each(function() {
+//         thisHeight = $(this).height();
+//         if(thisHeight > tallest) {
+//             tallest = thisHeight;
+//         }
+//     });
+//     group.height(tallest);
+// }
+// $(document).ready(function(){
+//     equalHeight($(".offer_block-tariff"));
+// }); 
 
 $('.tariffs_slider').slick({
     slidesToShow: 3,
