@@ -34,3 +34,7 @@ $topland_main_class = new ToplandCloudTag( __FILE__ );
 // Правила активации:
 // register_activation_hook() должен вызываться из основного файла плагина, из того где расположена директива Plugin Name
 register_activation_hook(__FILE__, array($topland_main_class, 'activate'));
+add_action( 'wp_enqueue_scripts', 'topland_cloudtag_script' );
+function topland_cloudtag_script(){
+	wp_enqueue_script( 'cloudtag-slider-init', TOPLAND_CLOUDTAG_PLUGIN_DIR . '/static/js/cloudtag-init.js');
+}

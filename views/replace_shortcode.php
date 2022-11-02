@@ -12,7 +12,7 @@
               </div>
             </section>       
             <script>
-                $(".cloud_tag_slider").slick({
+                $('.cloud_tag_slider').slick({
                     autoplay: true,
                     dots: false,
                     arrows: false,
