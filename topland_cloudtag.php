@@ -36,5 +36,5 @@ $topland_main_class = new ToplandCloudTag( __FILE__ );
 register_activation_hook(__FILE__, array($topland_main_class, 'activate'));
 add_action( 'wp_enqueue_scripts', 'topland_cloudtag_script' );
 function topland_cloudtag_script(){
-	wp_enqueue_script( 'cloudtag-slider-init', '/wp-content/plugins/topland-cloudtag/static/js/cloudtag-init.js', array('jquery, slick'));
+	wp_enqueue_script( 'cloudtag-slider-init', '/wp-content/plugins/topland-cloudtag/static/js/cloudtag-init.js', array('jquery','slick'));
 }
