@@ -12,16 +12,17 @@
           $cat_slug = $cat->slug;
 
           foreach ( self::$model->get_list() as $item ): 
-            if ($item->slug = $cat_slug ): 
+            if ($item->slug == $cat_slug ): 
         ?>   
-          <?php echo $item->slug; echo " / "; echo $cat_slug?>
-         <div class="offer_block-tariff">
+          
+         <div class="offer_block-tariff ">
             <div class="offer_block-tariff-top">
               <h3 class="tariff_title"><?= $item->title ?></h3>  
               <p class="tariff_desc"><?= $item->subtitle ?></p>  
               <p class="tariff_price">от <span><?= $item->price ?></span> ₽</p>
             </div>            
             <div class="tariff_list">
+              <? $item->slug ?>
               <?= $item->text ?>                                
             </div>
             <div class="offer_block-btn-wrapper">
