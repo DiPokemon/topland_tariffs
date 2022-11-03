@@ -35,4 +35,4 @@
     </div>
   </div>
 </section>  
-<style>.tariff_slider .slick-track{display:flex}.offer_block-tariff {flex: 0 0 auto; height: auto}.offer_block-tariff-top{border-bottom:1px solid #3f3354}.offer_block-btn-wrapper{border-top:1px solid #3f3354}</style>
+<style>.tariff_slider .slick-track{display:flex}.offer_block-tariff{flex: 0 0 auto; height: auto;justify-content: space-between;}.offer_block-tariff-top{border-bottom:1px solid #3f3354;width: 100%;padding-bottom: 10px}.offer_block-btn-wrapper{border-top:1px solid #3f3354;width:100%;padding-top:10px}</style>
