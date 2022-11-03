@@ -14,7 +14,7 @@
           foreach ( self::$model->get_list() as $item ): 
             if ($item->slug = $cat_slug ): 
         ?>   
-          <?php echo $item->slug; echo " / " echo $cat_slug?>
+          <?php echo $item->slug; echo " / "; echo $cat_slug?>
          <div class="offer_block-tariff">
             <div class="offer_block-tariff-top">
               <h3 class="tariff_title"><?= $item->title ?></h3>  
