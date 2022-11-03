@@ -15,7 +15,7 @@
           if ($item->slug = $cat_slug ): 
         ?>   
          <div class="offer_block-tariff">
-            <div>
+            <div class="offer_block-tariff-top">
               <h3 class="tariff_title"><?= $item->title ?></h3>  
               <p class="tariff_desc"><?= $item->subtitle ?></p>  
               <p class="tariff_price">от <span><?= $item->price ?></span> ₽</p>
@@ -23,7 +23,7 @@
             <div class="tariff_list">
               <?= $item->text ?>                                
             </div>
-            <div>
+            <div class="offer_block-btn-wrapper">
               <a href="#" class="btn order_btn">Заказать</a>
             </div>
             </div>   
@@ -35,4 +35,4 @@
     </div>
   </div>
 </section>  
-<style>.tariff_slider .slick-track{display:flex}.offer_block-tariff {flex: 0 0 auto; height: auto}</style>
+<style>.tariff_slider .slick-track{display:flex}.offer_block-tariff {flex: 0 0 auto; height: auto}.offer_block-tariff-top{border-bottom:1px solid #3f3354}.offer_block-btn-wrapper{border-top:1px solid #3f3354}</style>
