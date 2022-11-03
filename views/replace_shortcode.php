@@ -3,16 +3,16 @@
     <div class="slider_wrapper">
       <div class="tariff_slider">
         <?php 
-        if ( is_single() ) {
-          $cats =  get_the_category();
-          $cat = $cats[0];
-        } else {
-          $cat = get_category( get_query_var('cat') );
-        }
-        $cat_slug = $cat->slug;
+          if ( is_single() ) {
+            $cats =  get_the_category();
+            $cat = $cats[0];
+          } else {
+            $cat = get_category( get_query_var('cat') );
+          }
+          $cat_slug = $cat->slug;
 
-        foreach ( self::$model->get_list() as $item ): 
-          if ($item->slug = $cat_slug ): 
+          foreach ( self::$model->get_list() as $item ): 
+            if ($item->slug = $cat_slug ): 
         ?>   
          <div class="offer_block-tariff">
             <div class="offer_block-tariff-top">
@@ -27,7 +27,8 @@
               <a href="#" class="btn order_btn">Заказать</a>
             </div>
             </div>   
-        <?php 
+        <?php else return; ?>
+        <?php
           endif;
         endforeach 
         ?>
