@@ -15,13 +15,17 @@
           if ($item->slug = $cat_slug ): 
         ?>   
          <div class="offer_block-tariff">
-            <h3 class="tariff_title"><?= $item->title ?></h3>  
-            <p class="tariff_desc"><?= $item->subtitle ?></p>  
-            <p class="tariff_price">от <span><?= $item->price ?></span> ₽</p>
+            <div>
+              <h3 class="tariff_title"><?= $item->title ?></h3>  
+              <p class="tariff_desc"><?= $item->subtitle ?></p>  
+              <p class="tariff_price">от <span><?= $item->price ?></span> ₽</p>
+            </div>            
             <div class="tariff_list">
               <?= $item->text ?>                                
             </div>
+            <div>
               <a href="#" class="btn order_btn">Заказать</a>
+            </div>
             </div>   
         <?php 
           endif;
@@ -31,3 +35,4 @@
     </div>
   </div>
 </section>  
+<style>.tariff_slider .slick-track{display:flex}.offer_block-tariff {flex: 0 0 auto; height: auto}</style>
