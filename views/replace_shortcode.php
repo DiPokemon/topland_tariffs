@@ -1,7 +1,4 @@
-<section>
-  <div class="offer_block-wrapper">
-    <div class="slider_wrapper">
-      <div class="tariff_slider">
+
         <?php 
           if ( is_single() ) {
             $cats =  get_the_category();
@@ -32,9 +29,5 @@
         <?php
           endif;
         endforeach 
-        ?>
-      </div>
-    </div>
-  </div>
-</section>  
+        ?>      
 <style>.tariff_slider .slick-track{display:flex}.offer_block-tariff{flex: 0 0 auto; height: auto;justify-content: space-between;}.offer_block-tariff-top{border-bottom:1px solid #3f3354;width: 100%;padding-bottom: 10px}.offer_block-btn-wrapper{border-top:1px solid #3f3354;width:100%;padding-top:10px}</style>
