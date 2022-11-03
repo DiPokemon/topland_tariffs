@@ -26,8 +26,8 @@
             <div class="offer_block-btn-wrapper">
               <a href="#" class="btn order_btn">Заказать</a>
             </div>
-            </div>   
-        <?php else { } ?>
+          </div>   
+        
         <?php
           endif;
         endforeach 
