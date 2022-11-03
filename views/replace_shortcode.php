@@ -27,7 +27,7 @@
               <a href="#" class="btn order_btn">Заказать</a>
             </div>
             </div>   
-        <?php else return; ?>
+        <?php else { } ?>
         <?php
           endif;
         endforeach 
