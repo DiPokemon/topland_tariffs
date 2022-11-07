@@ -68,7 +68,7 @@ public function delete($id){
 			);
 }
 
-protected function add(){
+public function add(){
 	global $wpdb;
 
 	$rows_affected = $wpdb->insert(
@@ -85,7 +85,7 @@ protected function add(){
 	return $rows_affected;
 }
 
-protected function edit(){
+public function edit(){
 	global $wpdb;
 
 	return 	$wpdb->update(

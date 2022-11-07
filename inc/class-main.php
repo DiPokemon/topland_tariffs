@@ -156,7 +156,7 @@ function routing_handlers(){
 				self::$model->subtitle = $subtitle;
 				self::$model->price = $price;
 				self::$model->text   = $text;				
-				self::$model->save();
+				self::$model->add();
 				print('<script>window.location = "/wp-admin/?page=' . TOPLAND_TARIFFS_PLUGIN_NAME . '"</script>');
 				break;
 			case 'edit':
@@ -166,7 +166,7 @@ function routing_handlers(){
 				self::$model->subtitle = $subtitle;
 				self::$model->price = $price;
 				self::$model->text   = $text;	
-				self::$model->save();
+				self::$model->edit();
 				print('<script>window.location = "/wp-admin/?page=' . TOPLAND_TARIFFS_PLUGIN_NAME . '"</script>');
 				break;
 			case 'delete':
