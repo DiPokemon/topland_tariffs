@@ -25,7 +25,7 @@ public function get($id){
 	$row = $wpdb->get_row($query, 'OBJECT');
 
 	$this->id 		= $id;
-	$this->slug	= is_null($row->slug)   ? '' : $row->slug;
+	$this->slug		= is_null($row->slug)   ? '' : $row->slug;
 	$this->title	= is_null($row->title)   ? '' : $row->title;
 	$this->subtitle	= is_null($row->subtitle)   ? '' : $row->subtitle;
 	$this->price	= is_null($row->price)   ? '' : $row->price;

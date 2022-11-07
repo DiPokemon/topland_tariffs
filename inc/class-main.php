@@ -133,7 +133,7 @@ function routing_handlers(){
 			if (isset($_GET['data_id']))
 				$id = $_GET['data_id'];		
 				
-			if (isset($_PSOT['data_id']))
+			if (isset($_POST['data_id']))
 				$id = $_POST['data_id'];		
 
 			if (isset($_POST['data_slug']))
@@ -154,21 +154,21 @@ function routing_handlers(){
 			// Понять какое событие и выполнить его
 			switch ((isset($_GET['action']) ? $_GET['action'] : '')) {
 			case 'add':
-				self::$model->slug = $slug;
-				self::$model->title = $title;
-				self::$model->subtitle = $subtitle;
-				self::$model->price = $price;
-				self::$model->text   = $text;				
+				self::$model->slug 		= $slug;
+				self::$model->title 	= $title;
+				self::$model->subtitle 	= $subtitle;
+				self::$model->price 	= $price;
+				self::$model->text   	= $text;				
 				self::$model->add();
 				print('<script>window.location = "/wp-admin/?page=' . TOPLAND_TARIFFS_PLUGIN_NAME . '"</script>');
 				break;
 			case 'edit':
 				self::$model->get( $id );
-				self::$model->slug = $slug;
-				self::$model->title = $title;
-				self::$model->subtitle = $subtitle;
-				self::$model->price = $price;
-				self::$model->text   = $text;	
+				self::$model->slug 		= $slug;
+				self::$model->title 	= $title;
+				self::$model->subtitle 	= $subtitle;
+				self::$model->price 	= $price;
+				self::$model->text   	= $text;	
 				self::$model->edit();
 				print('<script>window.location = "/wp-admin/?page=' . TOPLAND_TARIFFS_PLUGIN_NAME . '"</script>');
 				break;
