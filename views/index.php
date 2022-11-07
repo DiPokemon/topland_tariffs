@@ -5,14 +5,15 @@
 
 	<hr class="wp-header-end">
 
-	<table class="wp-list-table widefat fixed striped posts">
+	<table width="100%" class="wp-list-table widefat fixed striped posts">
 		<thead>
 			<tr>
-				<th>Ярлык</th>
-				<th>Заголовок</th>			
-				<th>Подзаголовок</th>
-				<th>Цена</th>
+				<th width="100px">Ярлык</th>
+				<th width="100px">Заголовок</th>			
+				<th width="150px">Подзаголовок</th>
+				<th width="50px">Цена</th>
 				<th>Текст</th>
+				<th></th>
 			</tr>
 		</thead>
 		<tbody id="the-list">
@@ -25,7 +26,7 @@
 				<td><?= $item->subtitle ?></td>	
 				<td><?= $item->price ?></td>
 				<td><?= $item->text ?></td>
-				<td>
+				<td class="edit_panel">
 					<a href="<?= TOPLAND_TARIFFS_PLUGIN_ADMIN_URL . '&view=edit&data_id=' . $item->id ?>">Редактировать</a>
 					|
 					<a href="<?= TOPLAND_TARIFFS_PLUGIN_ADMIN_URL . '&action=delete&data_id=' . $item->id ?>">Удалить</a>
