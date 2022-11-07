@@ -160,6 +160,7 @@ function routing_handlers(){
 				print('<script>window.location = "/wp-admin/?page=' . TOPLAND_TARIFFS_PLUGIN_NAME . '"</script>');
 				break;
 			case 'edit':
+				self::$model->get( $id );
 				self::$model->slug = $slug;
 				self::$model->title = $title;
 				self::$model->subtitle = $subtitle;
