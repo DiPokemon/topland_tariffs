@@ -131,7 +131,10 @@ function routing_handlers(){
 
 			// Обработка $_POST и $_GET
 			if (isset($_GET['data_id']))
-				$id = $_GET['data_id'];			
+				$id = $_GET['data_id'];		
+				
+			if (isset($_PSOT['data_id']))
+				$id = $_POST['data_id'];		
 
 			if (isset($_POST['data_slug']))
 				$slug = $_POST['data_slug'];
