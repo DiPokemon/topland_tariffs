@@ -8,12 +8,12 @@
 	<table width="100%" class="wp-list-table widefat fixed striped posts">
 		<thead>
 			<tr>
-				<th width="100px">Ярлык</th>
-				<th width="100px">Заголовок</th>			
-				<th width="150px">Подзаголовок</th>
-				<th width="50px">Цена</th>
+				<th width="150px">Ярлык</th>
+				<th width="150px">Заголовок</th>			
+				<th width="250px">Подзаголовок</th>
+				<th width="100px">Цена</th>
 				<th>Текст</th>
-				<th></th>
+				<th width="150px"></th>
 			</tr>
 		</thead>
 		<tbody id="the-list">
