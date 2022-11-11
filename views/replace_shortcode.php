@@ -22,7 +22,7 @@
               <?= $item->text ?>                                
             </div>
             <div class="offer_block-btn-wrapper">
-              <a href="#" class="btn order_btn">Заказать</a>
+              <a href="#lightning_contact_form" class="btn order_btn">Заказать</a>
             </div>
           </div>   
         
