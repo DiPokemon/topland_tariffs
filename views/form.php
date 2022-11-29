@@ -56,7 +56,7 @@ if ($mode == 'edit')
 						<label for="text">Текст</label>
 					</th>
 					<td>
-						<textarea name="data_text" type="text" id="text" value="<?= self::$model->text?>" class="regular-text"></textarea>
+						<textarea name="data_text" type="text" id="text" class="regular-text"><?= self::$model->text?></textarea>
 					</td>
 				</tr>		
 			</tbody>
