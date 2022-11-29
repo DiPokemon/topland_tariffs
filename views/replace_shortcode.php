@@ -18,7 +18,7 @@
               <p class="tariff_desc"><?= $item->subtitle ?></p>  
               <p class="tariff_price">от <span><?= $item->price ?></span> ₽</p>
             </div> 
-            <div>
+            <div class="tariff_body">
               <div class="tariff_list">              
                 <?= $item->text ?>                                
               </div>
