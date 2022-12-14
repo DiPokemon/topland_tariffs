@@ -40,7 +40,7 @@ if ($mode == 'edit')
 						<label for="subtitle">Подзаголовок</label>
 					</th>
 					<td>
-						<input name="data_subtitle" type="text" id="subtitle" value="<?= self::$model->subtitle?>" class="regular-text">
+						<textarea name="data_subtitle" type="text" id="subtitle" class="regular-text"><?= self::$model->subtitle?></textarea>						
 					</td>
 				</tr>
 				<tr>

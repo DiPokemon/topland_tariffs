@@ -52,7 +52,7 @@ function activate(){
 			id int(11) NOT NULL AUTO_INCREMENT,
 			slug tinytext NULL,
 			title tinytext NULL,
-			subtitle tinytext NULL,
+			subtitle text NULL,
 			price tinytext NULL,
 			text text NULL,
 			UNIQUE KEY id (id)
