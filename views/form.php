@@ -11,7 +11,7 @@ if ($mode == 'edit')
 
 <div class="wrap">
 	<h1 class="wp-heading-inline"><?= $form_title ?> тарифа</h1>
-	<a href="<?= TOPLAND_CLOUDTAG_PLUGIN_ADMIN_URL ?>" class="page-title-action">← Назад</a>
+	<a href="<?= TOPLAND_TARIFFS_PLUGIN_ADMIN_URL ?>" class="page-title-action">← Назад</a>
 
 	<form method="post" action="<?= $form_action ?>" novalidate="novalidate">
 		<?php if ($mode == 'edit'): ?>
