@@ -16,14 +16,14 @@
             <div class="offer_block-tariff-top">
               <h3 class="tariff_title"><?= $item->title ?></h3>  
               <p class="tariff_desc"><?= $item->subtitle ?></p>  
-              <p class="tariff_price">от <span><?= $item->price ?></span> ₽</p>
+              <p class="tariff_price">from <span><?= $item->price ?></span> $</p>
             </div> 
             <div class="tariff_body">
               <div class="tariff_list">              
                 <?= $item->text ?>                                
               </div>
               <div class="offer_block-btn-wrapper">
-                <a href="#lightning_contact_form" class="btn order_btn">Заказать</a>
+                <a href="#lightning_contact_form" class="btn order_btn">Order</a>
               </div>
             </div>           
             
